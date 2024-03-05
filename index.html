@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <style>
+        body
+{
+background-color: 	#303030;
+font-family: Verdana;
+font-size: 24px;
+color: rgb(0, 255, 13);
+}
+#q
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#w
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#a
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}#b
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#wynik
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#y
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#u
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#i
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+#o
+{
+	  text-align: center;
+    border: 3px solid #808080;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosty kalkulator</title>
+    <script>
+        function suma() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+
+            document.getElementById("wynik").innerHTML = a + b;
+        }
+        function roznica() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+
+            document.getElementById("wynik").innerHTML = a - b;
+        }
+        function iloczyn() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+
+            document.getElementById("wynik").innerHTML = a * b;
+        }
+        function iloraz() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+
+            document.getElementById("wynik").innerHTML = a / b;
+        }           
+
+    </script>
+</head>
+<body>
+    <h1 id="q">Prosty kalkulator</h1>
+    <h2 id="w">==========================</h2>
+
+    <input type="text" id="a" value="2" dir="rtl">
+    <input type="text" id="b" value="2" dir="rtl">
+    <div id="wynik">?</div>
+    <button id="y" onclick="suma()"> + </button>
+    <button id="u" onclick="roznica()"> - </button>
+    <button id="i" onclick="iloczyn()"> * </button>
+    <button id="o" onclick="iloraz()"> / </button>
+
+    
+</body>
+</html>
